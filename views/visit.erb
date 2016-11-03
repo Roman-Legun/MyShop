@@ -1,0 +1,59 @@
+<h1>Тут ви можете стати нашим гостем!</h1>
+
+<script type="text/javascript">
+	$ (function(){
+		$('#color').simplecolorpicker();
+		$('#datetimepicker').datetimepicker();
+	});
+</script>
+
+<form action="/visit" method="POST">
+
+	<div class="form-group">
+		<label>Ваше iм'я:</label>
+		<input type="text" name="client[name]" class="form-control" id="exampleInputEmail1" placeholder="введiть iм'я" value="">
+	</div>
+
+	<div class="form-group">
+		<label>Ваш телефон:</label>
+		<input type="text" name="client[phone]" class="form-control" id="exampleInputEmail1" placeholder="введiть номер телефону" value="">
+	</div>
+
+	<div class="form-group">
+		<label>Коли вас чекати:</label>
+		<input id="datetimepicker" type="text" name="client[datestamp]" class="form-control" id="exampleInputEmail1" placeholder="введiть дату" value="">
+	</div>
+
+	<div class="form-group">
+		<label>Виберiть нашого майстра:</label>
+		<select type="text" name="master" class="form-control">
+
+			<%@barbers.each do |item|%>
+			<option <%=@barbers == item['name'] ? 'selected' : '' %>><%=item['name']%></option>
+			<%end%>
+
+		</select>
+	</div>
+
+	<div>    
+		<label>Виберiть любий колiр:</label>
+		<select id="color" name="client[color]">
+			<option value="#FFA500">Green</option>
+			<option value="#5484ed">Bold blue</option>
+			<option value="#8A2BE2">Blue</option>
+			<option value="#46d6db">Turquoise</option>
+			<option value="#4B0082">Light green</option>
+			<option value="#51b749">Bold green</option>
+			<option value="#fbd75b">Yellow</option>
+			<option value="#ffb878">Orange</option>
+			<option value="#ff887c">Red</option>
+			<option value="#dc2127">Bold red</option>
+			<option value="#dbadff">Purple</option>
+			<option value="#FFFF00">Gray</option>
+		</select>
+	</div>
+
+
+	<button type="submit" class="btn btn-primary">ВIДПРАВИТИ</button>
+
+</form>

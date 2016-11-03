@@ -8,7 +8,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="/css/my_css.css">
 
-	
+	<script src="/jquery.simplecolorpicker.js"></script>
+	<link rel="stylesheet" href="/jquery.simplecolorpicker.css">
 		
 		</head>
 		<body>
@@ -27,9 +28,9 @@
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-							<li><a href="">zzz</a></li>
-							<li><a href="">xxx</a></li>
-							<li><a href="">ccc</a></li>
+							<li><a href="/visit">Записатися</a></li>
+							<li><a href="">0000</a></li>
+							<li><a href="">0000</a></li>
 						</ul>
 						
 					</div><!--/.nav-collapse -->
@@ -38,7 +39,7 @@
 
 				<div>
 					<%if @error then %>
-					<div class="alert alert-error"><%=@error%></div>
+					<div class="alert alert-danger"><%=@error%></div>
 					<% end %>
 					<%= yield %>
 				</div>
