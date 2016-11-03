@@ -1,0 +1,28 @@
+body {
+	background-color: #D3D3D3;
+}
+
+input[type="text"] {
+font-size: 18px;
+height: 38px;
+width: 500px;
+}
+
+textarea[type="text"]{
+font-size: 18px;
+width: 700px;
+}
+
+select[type="text"] {
+font-size: 18px;
+height: 38px;
+width: 500px;
+}
+
+hr {
+
+	width: auto;
+
+	height: 3px;
+	background-color: #A9A9A9;
+}
