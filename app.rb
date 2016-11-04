@@ -47,3 +47,12 @@ get '/bookings' do
   @clients = Client.order('created_at DESC')
   erb :bookings
 end
+
+get '/client/:id' do
+  @client = Client.find(params[:id])
+  erb :client
+end
+
+get '/about' do
+  erb :about
+end
