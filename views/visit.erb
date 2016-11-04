@@ -11,17 +11,17 @@
 
 	<div class="form-group">
 		<label>Ваше iм'я:</label>
-		<input type="text" name="client[name]" class="form-control" id="exampleInputEmail1" placeholder="введiть iм'я" value="">
+		<input type="text" name="client[name]" class="form-control" id="exampleInputEmail1" placeholder="введiть iм'я" value="<%=@c.name%>">
 	</div>
 
 	<div class="form-group">
 		<label>Ваш телефон:</label>
-		<input type="text" name="client[phone]" class="form-control" id="exampleInputEmail1" placeholder="введiть номер телефону" value="">
+		<input type="text" name="client[phone]" class="form-control" id="exampleInputEmail1" placeholder="введiть номер телефону" value="<%=@c.phone%>">
 	</div>
 
 	<div class="form-group">
 		<label>Коли вас чекати:</label>
-		<input id="datetimepicker" type="text" name="client[datestamp]" class="form-control" id="exampleInputEmail1" placeholder="введiть дату" value="">
+		<input id="datetimepicker" type="text" name="client[datestamp]" class="form-control" id="exampleInputEmail1" placeholder="введiть дату" value="<%=@c.datestamp%>">
 	</div>
 
 	<div class="form-group">
