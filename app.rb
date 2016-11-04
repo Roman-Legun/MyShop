@@ -15,6 +15,9 @@ end
 class Barber < ActiveRecord::Base
 end
 
+class Product < ActiveRecord::Base
+end
+
 before do
   @barbers = Barber.all
 end

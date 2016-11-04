@@ -1,3 +1,9 @@
 function xxx(){
-		alert("Це нас перший магазин!");
-	}
+
+	var x = window.localStorage.getItem('v');
+	x = x * 1 + 1;
+	window.localStorage.setItem('v', x);
+
+	alert(x);
+
+}
