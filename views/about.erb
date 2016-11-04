@@ -1,2 +1,17 @@
 <h1>Коротко про нас!</h1>
 <button type="submit" class="btn btn-primary" onclick="xxx()">ВIДПРАВИТИ</button>
+
+<h3>
+
+<%@products.each do |product|%>
+
+<h4>
+<%=product.title%>____
+<%=product.description%>
+
+</h4>
+
+<%end%>
+	
+
+</h3>
