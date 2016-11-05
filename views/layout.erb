@@ -11,46 +11,48 @@
 
 	<script src="/jquery.simplecolorpicker.js"></script>
 	<link rel="stylesheet" href="/jquery.simplecolorpicker.css">
-		
-		</head>
-		<body>
-			<div class="container">
 
-				<!-- Static navbar -->
-				<nav class="navbar navbar-default" role="navigation">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="/">MyShop</a>
-					</div>
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav">
-							<li><a href="/about">Про нас</a></li>
-							<li><a href="/visit">Записатися</a></li>
-							<li><a href="/bookings">Нашi покупцi</a></li>
-							
-						</ul>
-						
-					</div><!--/.nav-collapse -->
-				</nav>
-				
+</head>
+<body>
+	<div class="container">
 
-				<div>
-					<%if @error then %>
-					<div class="alert alert-danger"><%=@error%></div>
-					<% end %>
-					<%= yield %>
-				</div>
-
-				</table>
-
+		<!-- Static navbar -->
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">MyShop</a>
 			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/about">Про нас</a></li>
+					<li><a href="/visit">Записатися</a></li>
+					<li><a href="/bookings">Нашi покупцi</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href=""><button type="submit" class="btn btn-sm btn-success">У КОРЗИНУ</button></a></li>
+				</ul>
+
+			</div><!--/.nav-collapse -->
+		</nav>
 
 
-			
-		</body>
-		</html>
+		<div>
+			<%if @error then %>
+			<div class="alert alert-danger"><%=@error%></div>
+			<% end %>
+			<%= yield %>
+		</div>
+
+	</table>
+
+</div>
+
+
+
+</body>
+</html>
