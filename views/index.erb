@@ -1,2 +1,15 @@
-<h1>Ласкаво просимо в наш магазин!</h1>
-<button type="submit" class="btn btn-primary" onclick="xxx()">ВIДПРАВИТИ</button>
+<h1 style="color:#006400">Ласкаво просимо в наш магазин!</h1><br><hr>
+
+<div class="row">
+	<%@products.each do |product|%>
+	<div class="col-md-6">
+		<div class="title"><%=product.title%></div>
+		<div class=""><img src="<%=product.path_to_image%>" alt="foto" ></div>
+		<div class="description"><%=product.description%></div>
+		<div class="size">розмiр: <%=product.size%></div>
+		<div class="size">цiна: <%=product.price%>грн.</div>
+	</div>
+	<%end%>	
+	<br>
+</div>
+<br><br><hr>
