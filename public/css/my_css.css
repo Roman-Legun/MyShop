@@ -58,4 +58,12 @@ img {
 	font-weight: bold;
 	color: #191970;
 }
+
+.effect {
+  background: #5F9EA0;
 }
+
+.effect:hover {
+  background: #6A5ACD;
+}
+
