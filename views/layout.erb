@@ -27,11 +27,14 @@
 					<li class="effect"><a href="/visit"><font size="6" color="#E0FFFF" face="Arial">Записатися</font></a></li>
 					<li class="effect"><a href="/bookings"><font size="6" color="#E0FFFF" face="Arial">Нашi покупцi</font></a></li>
 				</ul>
-				<form action="/cart" method="post">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href=""><input style="color: #800000" type="submit" class="btn btn-sm btn-warning" value="ВАША КОРЗИНA"></a></li>
-					</ul>
-				</form>
+				<ul id="cart" class="nav navbar-nav navbar-right">
+					<li>
+						<form action="/cart" method="post">
+							<input id="orders_input" name="orders" type="hidden">
+							<input id="orders_button" style="color: #800000" type="submit" class="btn btn-sm btn-warning" value="ВАША КОРЗИНA (...)">
+						</form>
+					</li>
+				</ul>
 
 			</div><!--/.nav-collapse -->
 		</nav>

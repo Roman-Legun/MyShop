@@ -67,3 +67,12 @@ img {
   background: #6A5ACD;
 }
 
+#cart {
+	
+    padding:12px;
+    padding-right: 10px;
+}
+#orders_button {
+	font-size: 15px;
+}
+
